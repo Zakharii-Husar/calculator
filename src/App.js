@@ -32,11 +32,11 @@ const reducer = (state, action) =>{
   let lastChar = state.count.slice(-1);
 
   if(   
-  lastChar == "+" ||
-  lastChar == "-" ||
-  lastChar == "*" ||
-  lastChar == "/" ||
-  lastChar == "." ||
+  lastChar === "+" ||
+  lastChar === "-" ||
+  lastChar === "*" ||
+  lastChar === "/" ||
+  lastChar === "." ||
   state.count.length == 0)return state;
   switch (action.type) {
     case "add":
