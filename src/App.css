@@ -1,0 +1,52 @@
+*, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: grey;
+}
+
+.app{
+  background: linear-gradient(blue, red);
+  width: 20%;
+  margin: 5rem auto 0 auto;
+  padding-top: 0.5rem;
+  background-color: grey;
+  font-size: xx-large;
+}
+
+.display{
+  background-color: green;
+  margin: 0.5rem;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons *{
+  text-align: center;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.operators{
+  grid-row: 1 / 5;
+  grid-column: 4;
+  background-color: unset;
+  margin: unset;
+}
+
+.app, .display, .buttons *{
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .app{
+    width: 100%;
+  }
+}
